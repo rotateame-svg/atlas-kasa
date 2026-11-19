@@ -1,0 +1,28 @@
+# Hangi tip verilmezse kullanılacak kasa tipi (eski "/kasaanahtarver <adet>" komutu için de)
+default-type: oyuncu
+
+crate:
+  hologram: true              # Kasanın üstünde yazı gösterilsin mi
+  broadcast: true             # Kasa açılınca tüm sunucuya duyur
+
+# Kasa tipleri. Her tipin kendi kasa bloğu ve KENDİ anahtarı vardır.
+# Yeni tip eklemek için aynı yapıda yeni bir bölüm aç (id'de harf/rakam kullan).
+types:
+  efsanevi:
+    name: "&6&lAtlas MC Efsanevi Kasa"
+    block: YELLOW_SHULKER_BOX
+    key-name: "&6&lEfsanevi Kasa Anahtarı"
+    key-material: NETHER_STAR
+    hologram: "&6&l✦ EFSANEVİ KASA ✦\n&7Sağ tık: &fEfsanevi Anahtarla aç\n&7Sol tık: &fÖdülleri gör"
+  ozel:
+    name: "&d&lAtlas MC Özel Kasa"
+    block: PURPLE_SHULKER_BOX
+    key-name: "&d&lÖzel Kasa Anahtarı"
+    key-material: OMINOUS_TRIAL_KEY
+    hologram: "&d&l✦ ÖZEL KASA ✦\n&7Sağ tık: &fÖzel Anahtarla aç\n&7Sol tık: &fÖdülleri gör"
+  oyuncu:
+    name: "&a&lAtlas MC Oyuncu Kasası"
+    block: LIME_SHULKER_BOX
+    key-name: "&a&lOyuncu Kasası Anahtarı"
+    key-material: TRIAL_KEY
+    hologram: "&a&l✦ OYUNCU KASASI ✦\n&7Sağ tık: &fOyuncu Anahtarıyla aç\n&7Sol tık: &fÖdülleri gör"

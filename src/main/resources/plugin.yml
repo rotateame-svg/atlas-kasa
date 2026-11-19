@@ -1,0 +1,19 @@
+name: AtlasKasa
+main: net.atlaskasa.AtlasKasa
+version: 1.1.0
+api-version: '1.21'
+author: AtlasMC
+commands:
+  kasakoy:
+    description: Baktığın yere belirtilen tipte kasa koyar, envanterindeki eşyaları ödül olarak içine alır
+    usage: /kasakoy <efsanevi|ozel|oyuncu>
+  kasasil:
+    description: Baktığın kasayı siler, içindeki eşyaları sana geri verir
+    usage: /kasasil
+  kasaanahtarver:
+    description: Belirtilen kasa tipinin anahtarını verir
+    usage: /kasaanahtarver <efsanevi|ozel|oyuncu> <adet> [oyuncu]
+permissions:
+  atlaskasa.admin:
+    description: Kasa yönetim komutları
+    default: op
